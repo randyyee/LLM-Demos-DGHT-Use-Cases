@@ -35,7 +35,7 @@
    "outputs": [],
    "source": [
     "assistant = client.beta.assistants.create(\n",
-    "  model=\"edav-api-share-gpt4-128k-tpm25plus-v1106-dfilter\", # replace with model deployment name.\n",
+    "  model=\"\", # replace with model deployment name.\n",
     "  instructions=\"\"\"Classify the tone of a given written entry as positive, negative, mixed, or neutral. Exclude phrases that are related to regular duties unless they indicate a strategic change and its impact. Exclude any phrases that are plans for the future.  Exclude any phrases that only describe current efforts without mentioning impact/outcomes. Provide reasoning, supporting quotes, a score based on the number of positive/negative phrases, and tags for your classification.\n",
     "\n",
     "# Steps\n",
@@ -275,7 +275,7 @@
     }
    ],
    "source": [
-    "df = pd.read_csv(\"C:\\\\Users\\\\pcx5\\\\OneDrive - CDC\\\\Randy Codebase\\\\Python\\\\multiagent_sitrep\\\\Datasets\\\\NarrativesRaw__2024-11-14_.csv\")\n",
+    "df = pd.read_csv(\"NarrativesRaw__2024-11-14_.csv\")\n",
     "\n",
     "df.head()"
    ]
